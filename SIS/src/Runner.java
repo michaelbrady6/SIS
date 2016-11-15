@@ -1,12 +1,20 @@
-import java.util.Scanner;
-
+import java.util.*;
+import java.io.*;
 public class Runner
 	{
-		public static void main(String[] args)
+		public static void main(String[] args)throws IOException
 			{
-
+				ArrayList<Student> students = new ArrayList<Student>();
+				Scanner file = new Scanner(new File ("studentInformation.txt"));
+				int i = 0;
+				while(file.hasNextLine())
+					{
+						String line = file.nextLine();
+						students.add(new Student());
+						students.get(i).setFirstName(line.substring(0,line.indexOf(" ")));
+						i++;
+					}
 			}
-
 		public static void initSetup()
 			{
 				System.out.println("Welcome to INPUT NAME ");
