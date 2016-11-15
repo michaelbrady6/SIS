@@ -8,8 +8,15 @@ public class Student
 		private String Grade1;
 		private String Grade2;
 		private String Grade3;
+		
+		
+		
 		public void Student()
 		{
+			
+			
+			
+			
 			
 		}
 	}
