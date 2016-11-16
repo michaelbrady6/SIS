@@ -21,6 +21,7 @@ public class Runner
 			 						students.get(i).setClass1(line.substring(0,line.indexOf(" ")));
 			 						i++;
 			 					}
+			 				changeGrade();
 			}
 		public static void initSetup()
 			{
@@ -85,6 +86,7 @@ public class Runner
 			Scanner input = new Scanner(System.in);
 			System.out.println("Which student's grades would you like to change?");
 			int input2 = input.nextInt();
-			
+			System.out.println("Is this the student who's grade you would like to change:");
+			System.out.println(students.get(input2).getFirstName() + " " + students.get(input2).getLastName());
 		}
 	}
