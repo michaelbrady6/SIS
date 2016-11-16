@@ -5,7 +5,6 @@ public class Runner
 		static ArrayList<Student> students = new ArrayList<Student>();
 		public static void main(String[] args)throws IOException
 			{
-				initSetup();
 	 				Scanner file = new Scanner(new File ("studentInformation.txt"));
 			 				int i = 0;
 			 				while(file.hasNextLine())
@@ -25,6 +24,7 @@ public class Runner
 			 				System.out.println(students.get(1).getFirstName());
 			 				System.out.println(students.get(1).getLastName());
 			 				System.out.println(students.get(1).getClass1());
+
 			}
 		public static void initSetup()
 			{
@@ -94,7 +94,8 @@ public class Runner
 			
 			else if(input4 == 0){
 			
-			}	
+			}
+			
 		}
 	}
-//recommit
+
