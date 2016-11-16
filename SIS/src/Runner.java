@@ -95,7 +95,7 @@ public class Runner
 			else if(input4 == 0){
 			
 			}
-			
+		}	
 		}
 	}
 //recommit
