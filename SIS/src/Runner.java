@@ -36,6 +36,13 @@ public class Runner
 			 						students.get(i).setGrade3(line.substring(0));
 			 						i++;
 			 					}
+<<<<<<< HEAD
+=======
+			 				System.out.println(students.get(1).getFirstName());
+			 				System.out.println(students.get(1).getLastName());
+			 				System.out.println(students.get(1).getClass1());
+
+>>>>>>> refs/heads/master
 			}
 		public static void initSetup()
 			{
@@ -49,8 +56,20 @@ public class Runner
 
 				if (input2 == 1)
 					{
-						// Add how would you like students listed method
-						// Add or Delete Student method
+						System.out.println("(1) Add a student");
+						System.out.println("(2) Delete a Student");
+						Scanner studentInput = new Scanner(System.in);
+						int studentInput2 = studentInput.nextInt();
+						if(studentInput2 == 1){
+							//addStudent();
+							
+						}else if(studentInput2 == 2 ){
+							deleteStudent();
+							
+						}else{
+							System.out.println("Please input either a 1 or a 2");
+							
+						}
 
 					} 
 				else if (input2 == 2)
@@ -98,6 +117,7 @@ public class Runner
 			}
 			
 		}
+<<<<<<< HEAD
 		public static void changeGrade()
 		{
 			Scanner input = new Scanner(System.in);
@@ -132,3 +152,7 @@ public class Runner
 			}
 		}
 	}
+=======
+	}
+
+>>>>>>> refs/heads/master
