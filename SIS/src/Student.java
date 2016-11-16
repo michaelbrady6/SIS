@@ -10,6 +10,10 @@ public class Student
 		private String Grade3;
 		private double GPA;
 		
+		public void Student()
+		{
+			
+		}
 		public String getFirstName() 
 		{
 			return firstName;
@@ -98,9 +102,5 @@ public class Student
 		{
 			GPA = gPA;
 		}
-
-		public void Student()
-		{
-			
-		}
+		
 	}

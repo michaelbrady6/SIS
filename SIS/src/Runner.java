@@ -7,18 +7,78 @@ public class Runner
 			{
 			 				Scanner file = new Scanner(new File ("studentInformation.txt"));
 			 				int i = 0;
+			 				int g1 = 0;
+			 				int g2 = 0;
+			 				int g3 = 0;
 			 				while(file.hasNextLine())
 			 					{
 			 						String line = file.nextLine();
 			 						students.add(new Student());
+			 						
 			 						students.get(i).setFirstName(line.substring(0,line.indexOf(" ")));
 			 						line = line.replace((line.substring(0, line.indexOf(" ")) + " "), "");
-			 						System.out.println(line);
+			 						
 			 						students.get(i).setLastName(line.substring(0,line.indexOf(" ")));
-//			 						System.out.println(students.get(i).getLastName());
 			 						line = line.replace((line.substring(0, line.indexOf(" ")) + " "), "");
-			 						System.out.println(line);
+			 						
 			 						students.get(i).setClass1(line.substring(0,line.indexOf(" ")));
+			 						line = line.replace((line.substring(0, line.indexOf(" ")) + " "), "");
+			 						
+			 						students.get(i).setGrade1(line.substring(0,line.indexOf(" ")));
+			 						line = line.replace((line.substring(0, line.indexOf(" ")) + " "), "");
+			 						
+			 						students.get(i).setClass2(line.substring(0,line.indexOf(" ")));
+			 						line = line.replace((line.substring(0, line.indexOf(" ")) + " "), "");
+			 						
+			 						students.get(i).setGrade2(line.substring(0,line.indexOf(" ")));
+			 						line = line.replace((line.substring(0, line.indexOf(" ")) + " "), "");
+			 						
+			 						students.get(i).setClass3(line.substring(0,line.indexOf(" ")));
+			 						line = line.replace((line.substring(0, line.indexOf(" ")) + " "), "");
+			 						
+			 						students.get(i).setGrade3(line.substring(0,line.indexOf(" ")));
+			 						line = line.replace((line.substring(0, line.indexOf(" ")) + " "), "");
+			 						
+			 						switch (students.get(i).getGrade1().substring(0,1))
+			 						{
+			 						case "A":
+			 							g1 = 4;
+			 						case "B":
+			 							g1 = 3;
+			 						case "C":
+			 							g1 = 2;
+			 						case "D":
+			 							g1 = 1;
+			 						case "F":
+			 							g1 = 0;
+			 						}
+			 						switch (students.get(i).getGrade2().substring(0,1))
+			 						{
+			 						case "A":
+			 							g2 = 4;
+			 						case "B":
+			 							g2 = 3;
+			 						case "C":
+			 							g2 = 2;
+			 						case "D":
+			 							g2 = 1;
+			 						case "F":
+			 							g2 = 0;
+			 						}
+			 						switch (students.get(i).getGrade3().substring(0,1))
+			 						{
+			 						case "A":
+			 							g3 = 4;
+			 						case "B":
+			 							g3 = 3;
+			 						case "C":
+			 							g3 = 2;
+			 						case "D":
+			 							g3 = 1;
+			 						case "F":
+			 							g3 = 0;
+			 						}
+			 						students.get(i).setGPA((g1 + g2 + g3)/3);
 			 						i++;
 			 					}
 			 				System.out.println(students.get(1).getFirstName());
@@ -73,13 +133,15 @@ public class Runner
 			
 			int input4 = input.nextInt();
 			
-			if(input4 == 1){
+			if(input4 == 1)
+			{
 				
 			students.remove(input);
 			
 			}
 			
-			else if(input4 == 0){
+			else if(input4 == 0)
+			{
 			
 			}
 			
