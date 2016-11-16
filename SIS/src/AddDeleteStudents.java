@@ -31,5 +31,11 @@ public class AddDeleteStudents {
 		
 	}
 	
+	public static void addStudent(){
+		
+		
+		
+	}
+	
 	
 }
