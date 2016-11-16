@@ -36,13 +36,6 @@ public class Runner
 			 						students.get(i).setGrade3(line.substring(0));
 			 						i++;
 			 					}
-<<<<<<< HEAD
-=======
-			 				System.out.println(students.get(1).getFirstName());
-			 				System.out.println(students.get(1).getLastName());
-			 				System.out.println(students.get(1).getClass1());
-
->>>>>>> refs/heads/master
 			}
 		public static void initSetup()
 			{
@@ -117,7 +110,6 @@ public class Runner
 			}
 			
 		}
-<<<<<<< HEAD
 		public static void changeGrade()
 		{
 			Scanner input = new Scanner(System.in);
@@ -152,7 +144,5 @@ public class Runner
 			}
 		}
 	}
-=======
-	}
 
->>>>>>> refs/heads/master
+
