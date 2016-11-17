@@ -16,9 +16,9 @@ public class Student
 		@Override
 		public String toString()
 			{
-				return "Student [firstName=" + firstName + ", lastName=" + lastName + ", Class1=" + Class1 + ", Class2="
-						+ Class2 + ", Class3=" + Class3 + ", Grade1=" + Grade1 + ", Grade2=" + Grade2 + ", Grade3="
-						+ Grade3 + ", GPA=" + GPA + "]";
+				return   firstName + " " + lastName + " " + Class1 + " "
+						+ Class2 + " " + Class3 + " " + Grade1 + " " + Grade2 + " "
+						+ Grade3 + " " + GPA ;
 			}
 		public String getFirstName()
 			{
