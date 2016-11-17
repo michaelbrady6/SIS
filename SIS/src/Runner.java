@@ -143,5 +143,5 @@ public class Runner
 				System.out.println("The grade has been changed");
 			}
 		}
-	}
 
+	}
