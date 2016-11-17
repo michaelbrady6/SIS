@@ -35,38 +35,6 @@ public class Runner
 			 						
 			 						students.get(i).setGrade3(line.substring(0));
 			 						i++;
-//			 						double q=0;
-//			 						switch(students.get(i).getGrade1().substring(0,1)){
-//			 						case "A":q+=4;
-//			 						break;
-//			 						case "B":q+=3;
-//			 						break;
-//			 						case "C":q+=2;
-//			 						break;
-//			 						case "D":q+=1;
-//			 						default:break;
-//			 						}
-//			 						switch(students.get(i).getGrade2().substring(0,1)){
-//			 						case "A":q+=4;
-//			 						break;
-//			 						case "B":q+=3;
-//			 						break;
-//			 						case "C":q+=2;
-//			 						break;
-//			 						case "D":q+=1;
-//			 						default:break;
-//			 						}
-//			 						switch(students.get(i).getGrade3().substring(0,1)){
-//			 						case "A":q+=4;
-//			 						break;
-//			 						case "B":q+=3;
-//			 						break;
-//			 						case "C":q+=2;
-//			 						break;
-//			 						case "D":q+=1;
-//			 						default:break;
-//			 						}
-//			 						students.get(i).setGPA(q);
 			 					}
 			}
 		public static void initSetup()
@@ -176,5 +144,4 @@ public class Runner
 			}
 		}
 	}
-
 
