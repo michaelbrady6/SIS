@@ -35,9 +35,7 @@ public class Runner
 			 						
 			 						students.get(i).setGrade3(line.substring(0));
 			 						students.get(i).setGPA(GetGPA.getGPA(i));
-			 						System.out.println(students.get(i).getGPA());
 			 						i++;
-			 						
 			 					}
 			}
 		public static void initSetup()
@@ -70,7 +68,15 @@ public class Runner
 					} 
 				else if (input2 == 2)
 					{
-						// Add how would you like students listed method
+						System.out.println("(1) Change student grade");
+						System.out.println("(2) Switch student's classes");
+						Scanner studentInput = new Scanner(System.in);
+						int studentInput2 = studentInput.nextInt();
+						if(studentInput2 == 1){
+							changeGrade();
+							
+						}else if(studentInput2 == 2 ){
+							SwitchClass.Change();
 						// Change Student Grades method
 					} 
 				else if (input2 == 3)
@@ -82,9 +88,9 @@ public class Runner
 				else
 					{
 						System.out.println("Please input Either 1 , 2 or,  3 ");
-
+						
 					}
-
+					}
 			}
 		public static void deleteStudent(){
 			
@@ -143,6 +149,7 @@ public class Runner
 				{
 					students.get(input2-1).setGrade3(s);
 				}
+				GetGPA.getGPA(input2-1);
 				System.out.println("The grade has been changed");
 			}
 		}
