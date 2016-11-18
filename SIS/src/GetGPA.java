@@ -1,7 +1,8 @@
-
+import java.lang.*;
+import java.text.*;
 public class GetGPA
 	{
-		public double getGPA(int i){
+		public static double getGPA(int i){
 			double q=0;
 			switch(Runner.students.get(i).getGrade1().substring(0,1)){
 			case "A":q+=4;
@@ -33,5 +34,12 @@ public class GetGPA
 			case "D":q+=1;
 			default:break;
 			}
-return q;	}
+			q = q/3;
+			q=q*100;
+			int a = (int)q;
+			double t= (double)a;
+			t=t/100;
+			
+return t;	}
+		
 	}

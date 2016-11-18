@@ -34,7 +34,10 @@ public class Runner
 			 						line = line.replace((line.substring(0, line.indexOf(" ")) + " "), "");
 			 						
 			 						students.get(i).setGrade3(line.substring(0));
+			 						students.get(i).setGPA(GetGPA.getGPA(i));
+			 						System.out.println(students.get(i).getGPA());
 			 						i++;
+			 						
 			 					}
 			}
 		public static void initSetup()
