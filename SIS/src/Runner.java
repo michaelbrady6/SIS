@@ -38,9 +38,12 @@ public class Runner
 			 						i++;
 			 						
 			 					}
+
 			 				printStudents();
+
+
+
 			 				initSetup();
-			 				SwitchClass.Change();
 			}
 		public static void printStudents(){
 			
