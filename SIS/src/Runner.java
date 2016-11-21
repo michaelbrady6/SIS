@@ -38,7 +38,7 @@ public class Runner
 			 						i++;
 			 						
 			 					}
-
+			 				printStudents();
 			 				initSetup();
 			 				SwitchClass.Change();
 			}
@@ -47,9 +47,10 @@ public class Runner
 				int e = 0;
 				while(e <= students.size() - 1){
 					
-					System.out.print(e + 1 + " ");
+					System.out.print(e + 1 + ") ");
 					System.out.println(students.get(e).getFirstName() + " " + 
-					students.get(e).getClass1() + " "+ students.get(e).getGrade1()  + " "
+					students.get(e).getLastName() + " " +
+					students.get(e).getClass1() + " " + students.get(e).getGrade1()  + " "
 					+ students.get(e).getClass2() + " "+ students.get(e).getGrade2() + " "
 					+ students.get(e).getClass3() + " "+ students.get(e).getGrade3());
 					
@@ -161,17 +162,22 @@ public class Runner
 				if (n == 1)
 				{
 					students.get(input2-1).setGrade1(s);
+					students.get(input2-1).getGrade1();
 				}
 				if (n == 2)
 				{
 					students.get(input2-1).setGrade2(s);
+					students.get(input2-1).getGrade2();
 				}
 				if (n == 3)
 				{
 					students.get(input2-1).setGrade3(s);
+					
 				}
 				GetGPA.getGPA(input2-1);
 				System.out.println("The grade has been changed");
+				printStudents();
+				
 			}
 		}
 
