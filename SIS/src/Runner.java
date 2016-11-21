@@ -125,23 +125,24 @@ public class Runner
 			int input2 = input.nextInt();
 			
 			
-			System.out.println("Are you sure you would like to remove " + students.get(input2).getFirstName());
+			System.out.println("Are you sure you would like to remove " + students.get(input2 -1 ).getFirstName() +" " + students.get(input2 -1).getLastName());
 			System.out.println("(1) Yes");
 			System.out.println("(0) No");
-			
-			int input4 = input.nextInt();
+			Scanner input3 = new Scanner(System.in);
+			int input4 = input3.nextInt();
 			
 			if(input4 == 1)
 			{
 				
-			students.remove(input);
+			students.remove(input2 -1 );
 			printStudents();
-			
+			initSetup();
 			}
 			
 			else if(input4 == 0)
 			{
-			
+			System.out.println("Bringing you back to the top . . . ");
+			initSetup();
 			}
 			
 		}
@@ -157,7 +158,7 @@ public class Runner
 			if(inp.equals("y")|| inp.equals("yes"))
 			{
 				System.out.println("Which class would you like to change the grade for?");
-				System.out.println("(1) " + students.get(input2-1).getClass1());
+				System.out.println("(1) "+ students.get(input2-1).getClass1());
 				System.out.println("(2) " + students.get(input2-1).getClass2());
 				System.out.println("(3) " + students.get(input2-1).getClass3());
 				int n = input.nextInt();
@@ -181,6 +182,7 @@ public class Runner
 				GetGPA.getGPA(input2-1);
 				System.out.println("The grade has been changed");
 				printStudents();
+				initSetup();
 				
 			}
 		}
