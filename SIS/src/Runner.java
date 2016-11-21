@@ -37,6 +37,7 @@ public class Runner
 			 						students.get(i).setGPA(GetGPA.getGPA(i));
 			 						i++;
 			 					}
+			 				
 			}
 		public static void initSetup()
 			{

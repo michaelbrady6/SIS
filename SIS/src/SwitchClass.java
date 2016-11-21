@@ -6,6 +6,7 @@ public class SwitchClass
 		{
 			String s = "";
 			String s2 = "";
+			String s3 = "";
 			Scanner input = new Scanner(System.in);
 			System.out.println("Which student's classes would you like to change?");
 			int n = input.nextInt();
@@ -33,52 +34,64 @@ public class SwitchClass
 				}
 			if (in2 == 1)
 				{
+					s3 = Runner.students.get(n-1).getGrade1();
 					s2 = Runner.students.get(n-1).getClass1();
 					Runner.students.get(n-1).setClass1(s);
 					if (in == 1)
 						{
+							Runner.students.get(n-1).setClass1(s3);
 							Runner.students.get(n-1).setClass1(s2);
 						}
 					else if (in == 2)
 						{
+							Runner.students.get(n-1).setGrade2(s3);
 							Runner.students.get(n-1).setClass2(s2);
 						}
 					else if (in == 3)
 						{
+							Runner.students.get(n-1).setGrade3(s3);
 							Runner.students.get(n-1).setClass3(s2);
 						}
 				}
 			else if (in2 == 2)
 				{
+					s3 = Runner.students.get(n-1).getGrade1();
 					s2 = Runner.students.get(n-1).getClass2();
 					Runner.students.get(n-1).setClass2(s);
 					if (in == 1)
 						{
+							Runner.students.get(n-1).setClass1(s3);
 							Runner.students.get(n-1).setClass1(s2);
 						}
 					else if (in == 2)
 						{
+							Runner.students.get(n-1).setGrade2(s3);
 							Runner.students.get(n-1).setClass2(s2);
 						}
 					else if (in == 3)
 						{
+							Runner.students.get(n-1).setGrade3(s3);
 							Runner.students.get(n-1).setClass3(s2);
 						}
 				}
 			else if (in2 == 3)
 				{
+					s3 = Runner.students.get(n-1).getGrade1();
 					s2 = Runner.students.get(n-1).getClass3();
 					Runner.students.get(n-1).setClass3(s);
 					if (in == 1)
 						{
+							Runner.students.get(n-1).setClass1(s3);
 							Runner.students.get(n-1).setClass1(s2);
 						}
 					else if (in == 2)
 						{
+							Runner.students.get(n-1).setGrade2(s3);
 							Runner.students.get(n-1).setClass2(s2);
 						}
 					else if (in == 3)
 						{
+							Runner.students.get(n-1).setGrade3(s3);
 							Runner.students.get(n-1).setClass3(s2);
 						}
 				}

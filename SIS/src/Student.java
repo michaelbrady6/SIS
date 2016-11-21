@@ -61,9 +61,9 @@ GPA=t;
 		@Override
 		public String toString()
 			{
-				return   firstName + " " + lastName + " " + Class1 + " "
-						+ Class2 + " " + Class3 + " " + Grade1 + " " + Grade2 + " "
-						+ Grade3 + " " + GPA ;
+				return   firstName + " " + lastName + " " + Class1 + " " + Grade1
+						+ " " +  Class2 + " " +  Grade2 + " " +Class3 + " " + 
+						 Grade3 + " " + GPA ;
 			}
 		public String getFirstName()
 			{
