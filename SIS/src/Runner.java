@@ -39,8 +39,8 @@ public class Runner
 			 						
 			 					}
 
+
 			 				initSetup();
-			 				SwitchClass.Change();
 			}
 		public static void printStudents(){
 			
