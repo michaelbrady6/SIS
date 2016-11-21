@@ -36,9 +36,29 @@ public class Runner
 			 						students.get(i).setGrade3(line.substring(0));
 			 						students.get(i).setGPA(GetGPA.getGPA(i));
 			 						i++;
+			 						
 			 					}
-			 				
+
+
+			 				initSetup();
 			}
+		public static void printStudents(){
+			
+				int e = 0;
+				while(e <= students.size() - 1){
+					
+					System.out.print(e + 1 + " ");
+					System.out.println(students.get(e).getFirstName() + " " + 
+					students.get(e).getClass1() + " "+ students.get(e).getGrade1()  + " "
+					+ students.get(e).getClass2() + " "+ students.get(e).getGrade2() + " "
+					+ students.get(e).getClass3() + " "+ students.get(e).getGrade3());
+					
+					
+					
+					e++;
+					
+				}
+		}
 		public static void initSetup()
 			{
 				System.out.println("Welcome to INPUT NAME ");
