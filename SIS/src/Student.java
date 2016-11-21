@@ -17,7 +17,7 @@ public class Student
 		public String toString()
 			{
 				return   firstName + " " + lastName + " " + Class1 + " " + Grade1
-						+ Class2 + " " +  Grade2 + " " +Class3 + " " + 
+						+ " " +  Class2 + " " +  Grade2 + " " +Class3 + " " + 
 						 Grade3 + " " + GPA ;
 			}
 		public String getFirstName()

@@ -37,7 +37,7 @@ public class Runner
 			 						students.get(i).setGPA(GetGPA.getGPA(i));
 			 						i++;
 			 					}
-			 				SwitchClass.Change();
+			 				
 			}
 		public static void initSetup()
 			{
