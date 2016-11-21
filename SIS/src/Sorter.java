@@ -11,7 +11,10 @@ public class Sorter
 				{
 					for (int j = 0; j < Runner.students.size(); j++)
 						{
-							
+							if(Runner.students.get(i).getGPA() > Runner.students.get(j).getGPA())
+								{
+									
+								}
 						}
 				}
 		}
