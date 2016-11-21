@@ -132,6 +132,7 @@ public class Runner
 			{
 				
 			students.remove(input);
+			printStudents();
 			
 			}
 			
