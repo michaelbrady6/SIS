@@ -40,19 +40,23 @@ public class Runner
 			 					}
 
 
-			 				initSetup();
+//			 				initSetup();
+//			 				Sorter.name();
+//			 				Sorter.Class();
+			 				Sorter.GPA();
+			 				printStudents();
 			}
 		public static void printStudents(){
 			
 				int e = 0;
 				while(e <= students.size() - 1){
 					
-					System.out.print(e + 1 + " ");
-					System.out.println(students.get(e).getFirstName() + " " + 
+					System.out.println(e + 1 + " ");
+					System.out.println(students.get(e).getFirstName() + " " + students.get(e).getLastName() + " " +
 					students.get(e).getClass1() + " "+ students.get(e).getGrade1()  + " "
 					+ students.get(e).getClass2() + " "+ students.get(e).getGrade2() + " "
 					+ students.get(e).getClass3() + " "+ students.get(e).getGrade3());
-					
+					System.out.print(" " + students.get(e).getGPA());
 					
 					
 					e++;
