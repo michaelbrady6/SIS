@@ -9,7 +9,11 @@ public class Student
 		private String Grade2;
 		private String Grade3;
 		private double GPA;
-		public void Student(String f,String l,String c1,String c2,String c3, String g1,String g2, String g3)
+		public Student()
+		{
+			
+		}
+		public Student(String f,String l,String c1,String c2,String c3, String g1,String g2, String g3)
 			{
 				firstName=f;
 				lastName=l;
@@ -40,7 +44,7 @@ public class Student
 			case "D":q+=1;
 			default:break;
 			}
-			switch(g3.substring(0,1){
+			switch(g3.substring(0,1)){
 			case "A":q+=4;
 			break;
 			case "B":q+=3;
