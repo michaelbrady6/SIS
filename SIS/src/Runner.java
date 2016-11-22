@@ -59,57 +59,94 @@ public class Runner
 		}
 		public static void initSetup()
 			{
-				System.out.println("Welcome to INPUT NAME ");
-				System.out.println("Would you like to : ");
-				System.out.println(" (1) Add or Delete a Student");
-				System.out.println(" (2) Change Student grades");
-				System.out.println(" (3) Sort Students");
-				Scanner input = new Scanner(System.in);
-				int input2 = input.nextInt();
+				boolean a = true;
+				System.out.println("Welcome to SIS ");
+				while (a)
+				{
+					System.out.println("Would you like to : ");
+					System.out.println(" 1) Add or Delete a Student");
+					System.out.println(" 2) Change Student grades");
+					System.out.println(" 3) Sort Students");
+					Scanner input = new Scanner(System.in);
+					int input2 = input.nextInt();
 
-				if (input2 == 1)
-					{
-						System.out.println("(1) Add a student");
-						System.out.println("(2) Delete a Student");
-						Scanner studentInput = new Scanner(System.in);
-						int studentInput2 = studentInput.nextInt();
-						if(studentInput2 == 1){
-							//addStudent();
-							
-						}else if(studentInput2 == 2 ){
-							deleteStudent();
-							
-						}else{
-							System.out.println("Please input either a 1 or a 2");
-							
+					if (input2 == 1)
+						{
+							System.out.println("1) Add a student");
+							System.out.println("2) Delete a Student");
+							Scanner studentInput = new Scanner(System.in);
+							int studentInput2 = studentInput.nextInt();
+							if(studentInput2 == 1){
+								Adder.addStudent();
+								
+							}
+							else if(studentInput2 == 2 ){
+								deleteStudent();
+								
+							}
+							else
+							{
+								System.out.println("Please input either a 1 or a 2");
+							}
+
+						} 
+					else if (input2 == 2)
+						{
+							System.out.println("1) Change student grade");
+							System.out.println("2) Switch student's classes");
+							Scanner studentInput = new Scanner(System.in);
+							int studentInput2 = studentInput.nextInt();
+							if(studentInput2 == 1)
+							{
+								changeGrade();
+							}
+							else if(studentInput2 == 2 )
+							{
+								SwitchClass.Change();
+							} 
 						}
-
-					} 
-				else if (input2 == 2)
+					else if (input2 == 3)
+						{
+							System.out.println("How would you like it sorted?");
+							System.out.println("1) By GPA");
+							System.out.println("2) By Last Name");
+							System.out.println("3) By Class");
+							Scanner studentInput = new Scanner(System.in);
+							int num = studentInput.nextInt();
+							if(num == 1)
+							{
+								Sorter.GPA();
+								printStudents();
+							}
+							else if(num == 2)
+							{
+								Sorter.name();
+								printStudents();
+							}
+							else if(num == 3)
+							{
+								Sorter.name();
+								Sorter.Class();
+								printStudents();
+							}
+						} 
+					else
+						{
+							System.out.println("Please input Either 1 , 2 or,  3 ");
+						}
+					System.out.println("Would you like to run this again?");
+					Scanner n = new Scanner(System.in);
+					String x = n.nextLine();
+					if (x.toLowerCase().equals("y") || x.toLowerCase().equals("yes"))
 					{
-						System.out.println("(1) Change student grade");
-						System.out.println("(2) Switch student's classes");
-						Scanner studentInput = new Scanner(System.in);
-						int studentInput2 = studentInput.nextInt();
-						if(studentInput2 == 1){
-							changeGrade();
-							
-						}else if(studentInput2 == 2 ){
-							SwitchClass.Change();
-						// Change Student Grades method
-					} 
-				else if (input2 == 3)
-					{
-						// Add how would you like students listed method
-						// Sort Students method
-
-					} 
-				else
-					{
-						System.out.println("Please input Either 1 , 2 or,  3 ");
 						
 					}
+					else
+					{
+						a = false;
+						System.out.println("Goodbye");
 					}
+				}
 			}
 		public static void deleteStudent(){
 			
@@ -120,8 +157,8 @@ public class Runner
 			
 			
 			System.out.println("Are you sure you would like to remove " + students.get(input2 -1 ).getFirstName() +" " + students.get(input2 -1).getLastName());
-			System.out.println("(1) Yes");
-			System.out.println("(0) No");
+			System.out.println("1) Yes");
+			System.out.println("0) No");
 			Scanner input3 = new Scanner(System.in);
 			int input4 = input3.nextInt();
 			
@@ -130,7 +167,6 @@ public class Runner
 				
 			students.remove(input2 -1 );
 			printStudents();
-			initSetup();
 			}
 			
 			else if(input4 == 0)
@@ -176,7 +212,7 @@ public class Runner
 				GetGPA.getGPA(input2-1);
 				System.out.println("The grade has been changed");
 				printStudents();
-				initSetup();
+//				initSetup();
 				
 			}
 		}

@@ -1,6 +1,7 @@
 import java.util.*;
 public class Adder{
-   public static void addStudent(){
+   public static void addStudent()
+   {
       String fn,ln,c1,c2,c3,g1,g2,g3;
       Scanner scan= new Scanner(System.in);
       System.out.println("Please type the new students first name");
